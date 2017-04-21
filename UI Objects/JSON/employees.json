@@ -1,0 +1,32 @@
+[
+	{
+		"name": "Joe Schmoe",
+		"yearsOfExperience": 1,
+		"department": "IT"
+	},
+	{
+		"name": "Sally Sallerson",
+		"yearsOfExperience": 15,
+		"department": "Engineering"
+	},
+	{
+		"name": "Bill Billson",
+		"yearsOfExperience": 5,
+		"department": "Engineering"
+	},
+	{
+		"name": "Jane Janet",
+		"yearsOfExperience": 11,
+		"department": "Management"
+	},
+	{
+		"name": "Bob Hope",
+		"yearsOfExperience": 9,
+		"department": "IT"
+	},
+	{
+		"name": "John Doe",
+		"yearsOfExperience": 7,
+		"department": "Management"
+	}
+]

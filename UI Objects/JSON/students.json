@@ -1,0 +1,17 @@
+{
+	"student1": {
+		"name": "Petar",
+	    "lastName": "Petrovic",
+	    "points": [1, 6, 2, 5, 7, 2, 8, 3]
+	},
+	"student2": {
+		"name": "Marko",
+	    "lastName": "Markovic",
+	    "points": [45, 62, 123, 63, 74, 85, 21, 77]
+	},
+	"student3": {
+		"name": "Jovan",
+	    "lastName": "Jovanovic",
+	    "points": [-6, 23, 10, 0, -22, 52, 86, 2]
+	}
+}

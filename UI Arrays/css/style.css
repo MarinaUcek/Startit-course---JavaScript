@@ -1,0 +1,177 @@
+/* 
+00.General Rules
+01.Header Section
+02.Input Section
+03.Result Section
+04.Media Queries
+ */
+
+/* 00.General Rules */
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'PT Sans', sans-serif;
+	font-weight: bold;
+	background-color: #766151;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+}
+
+.container-fluid {
+	max-width: 900px;
+}
+
+/* 01.Header Section */
+header h1 {
+	margin-bottom: 25px;
+	color: #F2EEB3;
+}
+
+/* 02.Input Section */
+#accordion h4 {
+	color: #F2EEB3;
+	background-color: #48372f;
+	border-radius: 5px;
+	outline: none;
+	padding: 10px 20px;
+}
+
+#accordion h4 ~ div {
+	background-color: #fee202;
+	border-radius: 5px;
+	margin: 20px;
+	padding: 15px;
+}
+
+#accordion h4 ~ div p {
+	font-size: 15px;
+	text-align: justify;
+	margin-bottom: 25px;
+}
+
+.row {
+	display: flex;
+	align-items: flex-end;
+}
+
+hr {
+	width: 95%;
+	border: none;
+	border-bottom: 2px solid #48372f;
+}
+
+input[type = "text"] {
+	color: #fee202;
+	background-color: #48372f;
+	border: none;
+	border-bottom: 2px solid #48372f;
+	border-radius: 5px;
+	outline: none;
+	margin-bottom: 10px;
+	padding-left: 10px;
+}
+
+input[type = "text"]:focus {
+	color: #48372f;
+	background-color: #fee202;
+}
+
+label {
+	display: block;
+}
+
+.btn,
+.btn:focus,
+.btn:active:focus {
+	font-weight: bold;
+	letter-spacing: 0.5px;
+	color: #fee202;
+	background-color: #48372f;
+	border: 2px solid #48372f;
+	outline: none;
+}
+
+.btn:hover {
+	color: #48372f;
+	background-color: #fee202;
+	border: 2px solid #48372f;
+	outline: none;
+	overflow: hidden;
+}
+
+.btn:active:focus {
+	outline: none;
+}
+
+.btn.margin-left {
+	margin-left: 15px;
+	margin-bottom: 2px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+}
+
+.btn.margin-bottom {
+	margin-bottom: 10px;
+}
+
+ul {
+	list-style-type: none;
+	width: 163px;
+	padding-left: 10px;
+}
+
+ul li span {
+	display: inline-block;
+	float: right;
+	margin-right: 10px;
+}
+
+/* 03.Result Section */
+#result-box {
+	width: 100%;
+	height: 300px;
+	background-color: #F2EEB3;
+	margin: 20px;
+	border-radius: 5px;
+	overflow: auto;
+	padding: 10px 20px;
+}
+
+#result-box p {
+	word-break: keep-all;
+}
+
+/* 04.Media Queries */
+@media screen and (max-width: 580px) {
+	
+/* 01.Header Section */
+	header h1 {
+		font-size: 24px;
+	}
+	
+/* Input Section */
+	#accordion h4 {
+		font-size: 14px;
+	}
+	#accordion h4 ~ div p, label {
+		font-size: 12px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	
+/* Input Section */
+	.row {
+		flex-wrap: wrap;
+	}
+	input[type = "text"], 
+	label.example {
+		margin-top: 10px;
+		margin-bottom: 15px;
+	}
+}

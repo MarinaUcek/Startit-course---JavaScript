@@ -1,0 +1,153 @@
+/* 
+00.General Rules
+01.Header Section
+02.JSON data Section
+03.Input Section
+04.Result Section
+05.Media Queries
+ */
+
+/* 00.General Rules */
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'PT Sans', sans-serif;
+	font-weight: bold;
+	background-color: #766151;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+}
+
+p {
+	word-break: keep-all;
+}
+
+span {
+	display: inline-block;
+	border-radius: 5px;
+	padding: 1px 5px;
+}
+
+.container-fluid {
+	max-width: 900px;
+}
+
+/* 01.Header Section */
+header h1 {
+	margin-bottom: 25px;
+	color: #F2EEB3;
+}
+
+/* 02.JSON data Section */
+#intro p {
+	color: #F2EEB3;
+	background-color: #48372f;
+	border-radius: 5px;
+	margin: 20px;
+	padding: 10px 20px;
+}
+
+h4 {
+	color: #F2EEB3;
+	background-color: #112169;
+	border-radius: 5px;
+	outline: none;
+	padding: 10px 20px;
+}
+
+h4 ~ div {
+	word-break: break-all;
+	background-color: #DAECF2;
+	border-radius: 5px;
+	margin: 20px;
+	padding: 15px;
+}
+
+/* 03.Input Section */
+#inputData h4 {
+	background-color: #250224;
+}
+
+#inputData h4 ~ div {
+	background-color: #D3BFEF;
+}
+
+#inputData h4 ~ div p {
+	font-size: 15px;
+	text-align: justify;
+	margin-bottom: 25px;
+}
+
+#inputData span {
+	color: #d3bfef;
+	background-color: #250224;
+}
+
+.row {
+	display: flex;
+	align-items: flex-end;
+}
+
+.btn,
+.btn:focus,
+.btn:active:focus {
+	font-weight: bold;
+	letter-spacing: 0.5px;
+	color: #D3BFEF;
+	background-color: #250224;
+	border: 2px solid #250224;
+	outline: none;
+}
+
+.btn:hover {
+	color: #250224;
+	background-color: #D3BFEF;
+	border: 2px solid #250224;
+	outline: none;
+	overflow: hidden;
+}
+
+.btn:active:focus {
+	outline: none;
+}
+
+/* 04.Result Section */
+#result-box {
+	width: 100%;
+	height: 300px;
+	background-color: #F2EEB3;
+	margin: 20px;
+	border-radius: 5px;
+	overflow: auto;
+	padding: 10px 20px;
+}
+
+/* 05.Media Queries */
+@media screen and (max-width: 580px) {
+	
+/* 01.Header Section */
+	header h1 {
+		font-size: 24px;
+	}
+	
+/* 03.Input Section */
+	#inputData h4 {
+		font-size: 14px;
+	}
+	#inputData h4 ~ div p {
+		font-size: 12px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	
+/* 03.Input Section */
+	.row {
+		flex-wrap: wrap;
+	}
+}

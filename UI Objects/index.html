@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<title>JSON</title>
+
+	<!-- ========== STYLESHEETS ========== -->
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|PT+Sans" rel="stylesheet">
+	<!-- Font Awesome Icon Library -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- Bootstrap stylesheet -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- Custom stylesheet -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+
+<body>
+
+	<!-- Header Section -->
+	<header>
+		<div class="container-fluid">
+			<h1 class="text-center">JSON Array/Object exercises</h1>
+		</div>
+	</header> <!-- Header Section ends -->
+	
+	<!-- JSON data Section -->
+	<div id="intro" class="container-fluid">
+		<p>
+			You required .json files from server and received raw data as JSON array/object.<br><span style="background-color: #112169">Blue colored section</span> represent content of those .json files, and <span style="background-color: #250224">violet colored section</span> explain exercises connected to those data.<br>Each exercise takes as an input a particular JSON array/object.<br><span style="background-color: #F2EEB3; color: #333">Beige colored section</span> holds output of those exercises.
+		</p>
+	</div>
+
+	<section id="JSONData" class="container-fluid">
+		<h4>course.json file</h4>
+		<div id="course"></div>
+		<h4>employees.json file</h4>
+		<div id="employees"></div>
+		<h4>students.json file</h4>
+		<div id="students"></div>
+	</section>
+	
+	<!-- Input Section -->
+	<section id="inputData" class="container-fluid">
+
+		<!-- First exercise -->
+		<h4>Make an Array of Strings</h4>
+		<div>
+  		<p>From <span>course.json</span> file use value of Students Evaluation Grade property and make an array of strings as follows:<br>["firstGrade/10", "secondGrade/10", . . .]</p>
+  		<button id="btn1" class="btn">Click for the result</button>
+  		</div> <!-- First exercise ends -->
+
+  		<!-- Second exercise -->
+		<h4>Make an Array of Objects</h4>
+		<div>
+  		<p>From <span>course.json</span> file use value of Students Evaluation Grade property and make an array of objects as follows:<br> [{grade_1: frequency}, {grade_2: frequency}, . . .]</p>
+  		<button id="btn2" class="btn">Click for the result</button>
+  		</div> <!-- Second exercise ends -->
+
+  		<!-- Third exercise -->
+		<h4>Calculate The Average Grade</h4>
+		<div>
+  		<p>From <span>course.json</span> file use value of Students Evaluation Grade property and do the following statistics:<br>Calculate the average grade.</p>
+  		<button id="btn3" class="btn">Click for the result</button>
+  		</div> <!-- Third exercise ends -->
+
+  		<!-- Fourth exercise -->
+		<h4>Total Years of Experience of All Employees</h4>
+		<div>
+  		<p>Based on information about Years of Experience of each employee from <span>employees.json</span> file, do the following statistics:<br>Calculate the total years of experience of all employees.</p>
+  		<button id="btn4" class="btn">Click for the result</button>
+  		</div> <!-- Fourth exercise ends -->
+
+  		<!-- Fifth exercise -->
+		<h4>Total Years of Experience of Each Department</h4>
+		<div>
+  		<p>Based on information about Years of Experience and Department of each employee from <span>employees.json</span> file, do the following statistics:<br>Calculate the total years of experience of each department.</p>
+  		<button id="btn5" class="btn">Click for the result</button>
+  		</div> <!-- Fifth exercise ends -->
+
+  		<!-- Sixth exercise -->
+		<h4>Total Number of Employees of Each Department</h4>
+		<div>
+  		<p>Based on information about Department of each employee from <span>employees.json</span> file, do the following statistics:<br>Calculate the total number of employees of each department.</p>
+  		<button id="btn6" class="btn">Click for the result</button>
+  		</div> <!-- Sixth exercise ends -->
+
+		<!-- Seventh exercise -->
+		<h4>Employees Classified based on Years of Experience</h4>
+		<div>
+  		<p>Based on information about Name and Years of Experience of each employee from <span>employees.json</span> file, do the following statistics:<br>Classify employees based on their personal years of experience.<br>There are four possible classes in which you should place all employees.<br>Newbie: 1 year of experience; Amateur: from 2 to 5 years of experience; Pro: from 6 to 10 years of experience; Expert: from 11 years of experience.</p>
+  		<button id="btn7" class="btn">Click for the result</button>
+  		</div> <!-- Seventh exercise ends -->
+		
+		<!-- Eighth exercise -->
+		<h4>List of All Employees</h4>
+		<div>
+  		<p>From <span>employees.json</span> file use value of Name property of each employee and list all their names in an array as follows:<br>["name1", "name2", . . .].</p>
+  		<button id="btn8" class="btn">Click for the result</button>
+  		</div> <!-- Eighth exercise ends -->
+
+  		<!-- Ninth exercise -->
+		<h4>Minimum and Maximum Number of Points</h4>
+		<div>
+  		<p>For each student in <span>students.json</span> file, write statement in which you will mentiton student's name, last name and maximum and minimum achieved number of points. It should look something like this:<br>Student NAME LASTNAME has achieved maximum of ___ points, and minimum of ___ points.</p>
+  		<button id="btn9" class="btn">Click for the result</button>
+  		</div> <!-- Ninth exercise ends -->
+
+  		<!-- Tenth exercise -->
+		<h4>Reordered Number of Points</h4>
+		<div>
+  		<p>For each student in <span>students.json</span> file, sort number of points so that the first one to show are even, and the second one are odd. It should look something like this:<br>Student NAME LASTNAME has following number of points: 28, 46, 62, 71, 9, 17.</p>
+  		<button id="btn10" class="btn">Click for the result</button>
+  		</div> <!-- Tenth exercise ends -->
+
+  		<!-- Eleventh exercise -->
+		<h4>Who is the best in the tournament?</h4>
+		<div>
+  		<p>For each student in <span>students.json</span> file calculate total number of points achieved in the tournament. Than sort students based on their scores and give them appropriate medal.</p>
+  		<button id="btn11" class="btn">Click for the result</button>
+  		</div> <!-- Eleventh exercise ends -->
+
+  		<!-- Twelfth exercise -->
+		<h4>Number of Points Greater than their Average.</h4>
+		<div>
+  		<p>For each student in <span>students.json</span> file filter out those number of points that are greater than their average.</p>
+  		<button id="btn12" class="btn">Click for the result</button>
+  		</div> <!-- Twelfth exercise ends -->
+
+	</section> <!-- Input Section ends -->
+
+	<!-- Results Section -->
+	<section id="results">
+		<div class="container-fluid">
+			<div class="row">
+				<div id="result-box" class="col-xs-12">
+					<p></p>
+				</div>
+			</div>
+		</div>
+	</section> <!-- Results Section ends -->
+
+	<!-- ========== SCRIPTS ========== -->
+	<!-- jQuery script -->
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<!-- jQuery ui script - for accordion -->
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<!-- Examples script -->
+	<script type="text/javascript" src="js/example.js"></script>
+	<!-- Custom script -->
+	<script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>
