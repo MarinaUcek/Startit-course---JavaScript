@@ -114,6 +114,7 @@ function palindrome(array) {
 				isPalindrome = " isn't palindrome";
 				break;
 			}
+		isPalindrome= " is palindrome";
 		}
 	output(" \"" + e + "\" ", isPalindrome);
 	});
